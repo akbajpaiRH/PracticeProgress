@@ -8,6 +8,7 @@ os.chdir(os.getcwd())
 s = subprocess.check_output(["pytest", "-v"], encoding='utf-8')
 # s2 = subprocess.check_output(["ls"], encoding='utf-8')
 print(s)
+# print(s.returncode)
 num = 0
 temp = s.split("\n")
 for line in temp:
