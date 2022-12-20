@@ -6,7 +6,6 @@ import json
 def main_url():
     return "https://reqres.in"
 
-
 def test_api(main_url):
     url = main_url + "/api/login/"
     # data = {'email': 'abc@xyz.com', 'password': 'qwerty'}
