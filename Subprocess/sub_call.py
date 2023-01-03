@@ -1,3 +1,3 @@
 import subprocess
 
-subprocess.call(["ls", "-l"])
+p=subprocess.call(["ls", "-l"])

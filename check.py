@@ -2,7 +2,7 @@ import subprocess
 import os
 
 
-class est:
+class Test:
     def check(self):
         # print(os.getcwd())
         p1 = subprocess.check_output(['ls', '/home/akbajpai/PycharmProjects/pythonProject/Subprocess/DEMO/'],
@@ -19,5 +19,5 @@ class est:
         else:
             print("no file found")
 
-obj = est()
+obj = Test()
 obj.check()
