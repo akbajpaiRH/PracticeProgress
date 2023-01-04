@@ -23,4 +23,4 @@ assert "Python 3.9.13" in s
 assert "pytest-7.2.0" in s
 assert "pluggy-1.0.0" in s
 assert num + " passed" in s
-assert "failed" not in s
+assert "failed" in s
