@@ -7,7 +7,7 @@ inp_list = ['junk.txt', 'junk2.txt', 'junk3.txt']
 @pytest.fixture(params=inp_list)
 def setup(request):
     retVal=request.param
-    print("value = {}\n".format(retVal))
+    # print("value = {}\n".format(retVal))
     return retVal
 
 def test_create(setup):
