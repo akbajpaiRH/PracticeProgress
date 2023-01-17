@@ -32,7 +32,6 @@ class Test:
         # print(p1.stdout)
         if st == 'junk.txt':
             print("inside if")
-            # pswrd = "Akashbajpai$1226"
             pswrd = secret
             inp1 = subprocess.Popen(['echo', pswrd], stdout=subprocess.PIPE)
             inp2 = subprocess.Popen(["sudo", "-S", "chattr", "+i",
@@ -44,7 +43,6 @@ class Test:
             try:
                 cmd = "rm -f /home/akbajpai/PycharmProjects/pythonProject/Subprocess/DEMO/{file_name}"
                 cmd = cmd.format(file_name=st)
-                print(cmd)
                 r = subprocess.run(cmd, shell=True)
 
                 if r.returncode == 0:
@@ -64,7 +62,7 @@ class Test:
 
 
 obj = Test()
-l = ['junk3.txt', 'junk2.txt', 'junk3.txt', 'junk4.txt', 'junk5.txt', 'junk8.txt', 'junk7.txt', 'junk5.txt']
+l = ['junk9.txt', 'junk2.txt', 'junk3.txt', 'junk4.txt', 'junk5.txt', 'junk8.txt', 'junk7.txt', 'junk5.txt']
 c = len(l)
 l1 = set(l)
 print(c)

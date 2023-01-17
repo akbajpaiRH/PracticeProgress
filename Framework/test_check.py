@@ -1,7 +1,7 @@
 import pytest
 from check import Test
 
-inp_list = ['junk.txt', 'junk2.txt', 'junk3.txt']
+inp_list = ['junk1.txt', 'junk2.txt', 'junk3.txt']
 
 
 @pytest.fixture(params=inp_list)
@@ -16,4 +16,5 @@ def test_create(setup):
 
 def test_delete(setup):
     ob = Test()
-    ob.check(setup)
+    d=0
+    ob.check(setup,d)
