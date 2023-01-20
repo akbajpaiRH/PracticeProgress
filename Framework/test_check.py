@@ -1,7 +1,7 @@
 import pytest
 from check import Test
 
-inp_list = ['junk.txt', 'junk2.txt', 'junk3.txt']
+inp_list = ['junk1.txt', 'junk2.txt', 'junk3.txt']
 
 
 @pytest.fixture(params=inp_list)

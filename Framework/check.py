@@ -39,15 +39,6 @@ class Test:
         p1 = subprocess.run(['ls', path],
                             stdout=subprocess.PIPE,
                             encoding='utf-8')
-        # print(p1.stdout)
-        # if st == 'junk.txt':
-        #     flag2 = True
-        #     pswrd = secret
-        #     inp1 = subprocess.Popen(['echo', pswrd], stdout=subprocess.PIPE)
-        #     inp2 = subprocess.Popen(["sudo", "-S", "chattr", "+i",
-        #                              path + "/{file_name}".format(
-        #                                  file_name=st)], stdin=inp1.stdout, stdout=subprocess.PIPE)
-        #     out, err = inp2.communicate()
 
         if st in p1.stdout:
             try:
