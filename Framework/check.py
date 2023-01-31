@@ -17,11 +17,14 @@ class Test:
         self.isImmutable = False
 
     def create(self, str):
+        flag = False
         try:
             p1 = subprocess.run(
                 ['touch',
                  path + '{file_name}'.format(file_name=str)],
                 stdout=subprocess.PIPE, encoding='utf-8')
+            if(p1.returncode!=0):
+                raise Exception("File already exists")
             if str == 'junk.txt':
                 self.isImmutable = True
                 pswrd = secret
